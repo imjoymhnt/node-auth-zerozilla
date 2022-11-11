@@ -25,4 +25,4 @@ app.get("/", (req, res) => {
 
 app.use("/", userRoute);
 
-app.listen(4000, () => console.log("App is running.."));
+app.listen(process.env.PORT || 4000, () => console.log("App is running.."));
